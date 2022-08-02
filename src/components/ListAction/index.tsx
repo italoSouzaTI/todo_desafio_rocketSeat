@@ -7,7 +7,7 @@ type countProps = {
 
 export function ListAction ({ countTask, complete }: countProps) {
     return (
-        <div className={style.container}>
+        <div className={style.containerListAction}>
             <div>
                 <p className={style.create}>Tarefas criadas</p>
                 <span>{countTask ?? '0'}</span>

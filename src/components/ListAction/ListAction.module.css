@@ -1,25 +1,23 @@
-.container {
+.containerListAction {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     width: 44.16rem;
 
-
 }
 
-.container div {
+.containerListAction div {
     display: flex;
     font-family: 'Inter';
     font-weight: bold;
     font-family: 14px;
 }
 
-
-.container div p {
+.containerListAction div p {
     margin-right: 0.48rem;
 }
 
-.container div span {
+.containerListAction div span {
     border-radius: 8px;
     min-width: 1.5rem;
     height: 1.5rem;
@@ -38,7 +36,7 @@
 }
 
 @media screen and (max-width: 480px) {
-    .container {
+    .containerListAction {
         width: 100%;
     }
 
