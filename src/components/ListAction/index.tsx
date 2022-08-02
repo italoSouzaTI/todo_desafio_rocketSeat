@@ -1,6 +1,11 @@
 import style from './ListAction.module.css'
 
-export function ListAction ({ countTask, complete }) {
+type countProps = {
+    countTask: number;
+    complete: number;
+}
+
+export function ListAction ({ countTask, complete }: countProps) {
     return (
         <div className={style.container}>
             <div>
