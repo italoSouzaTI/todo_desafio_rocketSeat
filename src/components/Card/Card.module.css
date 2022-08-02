@@ -1,0 +1,68 @@
+.ContainerCard {
+    margin-top: 1.44rem;
+
+    width: 44.16rem;
+
+    display: flex;
+    flex-direction: row;
+    padding: 0.96rem;
+
+
+    border-radius: 0.48rem;
+    border-width: 0.12rem;
+    border-color: var(--gray-400);
+
+    background-color: var(--gray-500);
+
+
+}
+
+.ContainerCard button {
+    background-color: transparent;
+    padding: 0;
+    display: flex;
+    align-items: flex-start;
+    cursor: pointer;
+    border: none;
+}
+
+
+.ContainerCard p {
+    display: flex;
+    flex: 1;
+    padding-right: 0.06rem;
+    color: var(--gray-100);
+}
+
+.ContainerCard svg {
+    font-size: 24px;
+}
+
+.ContainerCard svg {
+    font-size: 24px;
+}
+
+.ContainerCard .check {
+    padding-right: 10px !important;
+    color: var(--blue-dark);
+
+}
+
+.check:hover {
+    color: var(--blue);
+}
+
+.ContainerCard .delete {
+    color: var(--gray-300);
+}
+
+.delete:hover {
+    color: var(--danger);
+}
+
+@media screen and (max-width: 480px) {
+    .ContainerCard {
+        width: 100%;
+    }
+
+}

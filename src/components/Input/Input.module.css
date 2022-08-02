@@ -1,0 +1,65 @@
+.container,
+input,
+button {
+    height: 3.24rem;
+    padding: 0 0.96rem;
+}
+
+.container {
+    position: relative;
+    top: -25px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type=text] {
+    width: 38.28rem;
+    margin-right: 0.48rem;
+    padding: 0 0.96rem;
+
+    font-family: 'Inter';
+    font-weight: 16px;
+
+    border-radius: 0.48rem;
+    border-width: 0.12rem;
+    border-color: var(--gray-700);
+
+    color: var(--gray-100);
+}
+
+.container input::placeholder {
+    color: var(--gray-300);
+}
+
+.container input[type=text]:focus {
+    outline: none;
+    border-color: var(--purple-dark);
+}
+
+.container button {
+    display: flex;
+    background-color: var(--blue-dark);
+    padding: 0 0.96rem;
+
+    cursor: pointer;
+    align-items: center;
+
+    border: none;
+    border-radius: 0.48rem;
+
+}
+
+.container button p {
+    margin-right: 0.48rem;
+}
+
+.container button:hover {
+    background-color: var(--blue);
+}
+
+.container button svg {
+    font-size: 16px;
+    color: var(--gray-100);
+}

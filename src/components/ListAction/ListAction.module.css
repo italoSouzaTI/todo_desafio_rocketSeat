@@ -1,0 +1,45 @@
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 44.16rem;
+
+
+}
+
+.container div {
+    display: flex;
+    font-family: 'Inter';
+    font-weight: bold;
+    font-family: 14px;
+}
+
+
+.container div p {
+    margin-right: 0.48rem;
+}
+
+.container div span {
+    border-radius: 8px;
+    min-width: 1.5rem;
+    height: 1.5rem;
+    padding: 0.12rem 0.48rem;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray-400);
+}
+
+.create {
+    color: var(--blue);
+}
+
+.finish {
+    color: var(--purple);
+}
+
+@media screen and (max-width: 480px) {
+    .container {
+        width: 100%;
+    }
+
+}

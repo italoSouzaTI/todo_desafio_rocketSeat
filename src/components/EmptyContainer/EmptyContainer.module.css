@@ -1,0 +1,39 @@
+.containerEmpaty {
+    width: 44.16rem;
+    height: 14.64rem;
+
+    margin-top: 1.44rem;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 0.06rem solid var(--gray-300);
+    border-top-left-radius: 0.6rem 0.6rem;
+    border-top-right-radius: 0.6rem 0.6rem;
+}
+
+.containerEmpaty img {
+    width: 3.36rem;
+    height: 3.36rem;
+    margin-bottom: 1.44rem;
+}
+
+.containerEmpaty p {
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: normal;
+    color: var(--gray-300);
+}
+
+.textBold {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 480px) {
+    .containerEmpaty {
+        width: 100%;
+    }
+
+}
