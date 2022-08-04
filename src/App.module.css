@@ -8,3 +8,10 @@
     margin-top: 3.84rem;
 
 }
+
+@media screen and (max-width: 480px) {
+    .containerApp {
+        width: 100%;
+    }
+
+}

@@ -17,12 +17,19 @@ export function Card ({ dados, isDelete, isCheck }: CardProps) {
                 onClick={() => { isCheck(dados.id) }}
                 className={style.check}>
                 {dados.isFinish ? (
-                    <CheckCircle />
+                    <CheckCircle
+                        color="#5E60CE"
+                    />
                 ) : (
                     <RadioButton />
                 )}
             </button>
-            <p>{dados.label}</p>
+            <p
+                style={{
+                    textDecoration: dados.isFinish ? 'line-through' : 'none',
+                    color: dados.isFinish ? '#808080' : '#F2F2F2'
+                }}
+            >{dados.label}</p>
             <button
                 className={style.delete}
                 onClick={() => { isDelete(dados.id) }}
@@ -30,6 +37,6 @@ export function Card ({ dados, isDelete, isCheck }: CardProps) {
                 <Trash />
             </button>
 
-        </div>
+        </div >
     )
 }
