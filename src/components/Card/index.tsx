@@ -1,7 +1,7 @@
 import { Task } from '../../App'
 import style from './Card.module.css'
 
-import { CheckCircle, Trash, RadioButton } from 'phosphor-react'
+import { CheckCircle, Trash, Circle } from 'phosphor-react'
 
 type CardProps = {
     dados: Task,
@@ -21,7 +21,7 @@ export function Card ({ dados, isDelete, isCheck }: CardProps) {
                         color="#5E60CE"
                     />
                 ) : (
-                    <RadioButton />
+                    <Circle />
                 )}
             </button>
             <p
