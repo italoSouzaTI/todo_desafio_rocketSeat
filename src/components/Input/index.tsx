@@ -12,6 +12,7 @@ export function Input ({ addtask }: InputProps) {
     function verifytask (label: string) {
         if (newTask.trim().length === 0) {
             alert('Preencha o campo para adicionar');
+            return false
         }
         addtask(newTask);
         setNewTask('');

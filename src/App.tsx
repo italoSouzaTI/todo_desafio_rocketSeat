@@ -33,6 +33,7 @@ function App () {
 
   function handleDele (event: string) {
     let newArray = task.filter(item => item.id != event);
+    finish(newArray)
     setTask(newArray);
   }
 
